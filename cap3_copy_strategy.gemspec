@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Cap3CopyStrategy::VERSION
   spec.authors       = ["Julien Gantner", "Marcus Seel"]
   spec.email         = ["julien.gantner@softwareinmotion.de", "marcus.seel@softwareinmotion.de"]
-  spec.description   = %q{recreates the capistrano copy strategy}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{recreates the capistrano copy strategy. creates a tar.gz file and uploads it to the server where it gets unpacked}
+  spec.summary       = %q{recreates the capistrano copy strategy}
   spec.homepage      = ""
   spec.license       = "MIT"
 
