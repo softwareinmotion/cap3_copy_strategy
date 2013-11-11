@@ -1,6 +1,6 @@
 # Cap3CopyStrategy
 
-TODO: Write a gem description
+Implements the copy strategy known from capistrano 2 for capistrano 3.
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To use the copy strategy do a simple:
+
+```ruby
+require 'cap3_copy_strategy/tasks'
+```
 
 ## Contributing
 
