@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["julien.gantner@softwareinmotion.de", "marcus.seel@softwareinmotion.de"]
   spec.description   = %q{recreates the capistrano copy strategy. creates a tar.gz file and uploads it to the server where it gets unpacked}
   spec.summary       = %q{recreates the capistrano copy strategy}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/softwareinmotion/cap3_copy_strategy"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
