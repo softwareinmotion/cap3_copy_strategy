@@ -15,7 +15,7 @@ namespace :copy_strategy do
     revision = `git ls-remote #{fetch(:repo_url)} HEAD`.split(' ')[0]
     tmp_dir = ENV['TMPDIR'] || '/tmp/'
     local_filename = "#{tmp_dir}#{revision}.tar.gz"
-    sh "git archive --remote=#{fetch(:repo_url)} master | gzip > #{local_filename}"
+    sh "git archive --remote=#{fetch(:repo_url)} #{fetch(:branch, 'master')} | gzip > #{local_filename}"
     on roles(:all) do
       execute :mkdir, '-p', release_path
       upload!(local_filename, release_path)
